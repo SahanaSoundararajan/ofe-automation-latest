@@ -3,7 +3,7 @@ import json
 import ssl
 import requests
 import csv
-import database as db
+import database
 
 
 # Deleting the order from orders and order_ofe_status tables if the order_id matches the value from the sampleorder
@@ -12,8 +12,8 @@ def delete_old_orderid_DB():
     with open('sampleorder.json') as f:
         data = json.load(f)
         order_id = data['orderId']
-    cur1 = db.con.cursor()
-    cur2 = db.con.cursor()
+    cur1 = database.con.cursor()
+    cur2 = database.con.cursor()
     cur1.execute("select * from order_ofe_status")
     cur2.execute("select * from orders")
     row1 = cur1.fetchall()
@@ -24,14 +24,14 @@ def delete_old_orderid_DB():
             id = order_id
             cur1.execute(query, (id,))
             print('order ofe deleted')
-            db.con.commit()
+            database.con.commit()
     for r in row2:
         if int(r[0]) == int(order_id):
             query = "delete from orders where id = %s"
             id = order_id
             cur2.execute(query, (id,)) 
             print('orders deleted') 
-            db.con.commit()
+            database.con.commit()
     
 
 #def new_order_booking
@@ -51,12 +51,12 @@ def new_order_booking():
 
 
 # Downloading the New/Inflight orders csv and validating the order_id is same from sampleorder and checking in DB
-def order_download(order_type):
+def order_download(order_type, auth_t):
     with requests.Session() as s:
         if order_type == 'New':
             url = "https://disney-adapter.jupiter.staging.qubewire.com/v1/reports/new-orders"
-            with open('auth.txt') as line:
-                auth_t = line.readline()
+            # with open('auth.txt') as line:
+            #     auth_t = line.readline()
             headers = {
                 'authorization': "Bearer " + auth_t,
             }
@@ -70,7 +70,7 @@ def order_download(order_type):
                 for line in data:
                     OrderID = line['OrderID']
 
-            cur = db.con.cursor()
+            cur = database.con.cursor()
             cur.execute("select * from orders")
             rows = cur.fetchall()
             for r in rows:
@@ -80,8 +80,8 @@ def order_download(order_type):
 
         elif order_type == 'Inflight':
             url = "https://disney-adapter.jupiter.staging.qubewire.com/v1/reports/inflight"
-            with open('auth.txt') as line:
-                auth_t = line.readline()
+            # with open('auth.txt') as line:
+            #     auth_t = line.readline()
             headers = {
                 'authorization': "Bearer " + auth_t,
             }
@@ -95,7 +95,7 @@ def order_download(order_type):
                 for line in data:
                     OrderID = line['OrderID']
 
-            cur = db.con.cursor()
+            cur = database.con.cursor()
             cur.execute("select * from orders")
             rows = cur.fetchall()
             for r in rows:

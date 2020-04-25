@@ -18,7 +18,6 @@ from autologging import traced, logged
 CHROME_OPTIONS = webdriver.ChromeOptions()
 CHROME_OPTIONS.add_argument("--no-sandbox")
 CHROME_OPTIONS.add_argument("--disable-setuid-sandbox")
-
 LOGGER = logging.getLogger(__name__)
 
 @traced

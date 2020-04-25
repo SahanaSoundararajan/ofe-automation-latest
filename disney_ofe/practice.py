@@ -1,4 +1,4 @@
-import view
+#import view
 import unittest
 import logging
 import csv
@@ -24,16 +24,18 @@ class Practice:
 
         if not self.setUpDone:
 
-            self.mock = start_mock.StartMock(results = self.results)
+            self.mock = start_mock.StartMock(service = "distributors_admin", results = self.results)
 
             self.timezone = "Asia/Kolkata"
 
-            distributorAdminTokenObj = distributorAdminOAuth.OAuth(userAccount = "distributorsAdmin",
-                                                                   results = self.results, useMock = False,
+            distributorAdminTokenObj = distributorAdminOAuth.OAuth(userAccount = "admin1",
+                                                                   results = self.results, useMock = True,
                                                                    tokenJsonFile = TOKEN_JSON_ADMIN,
                                                                    oauthType = "Polling")
 
             self.distributorsAdminToken = distributorAdminTokenObj.token
+            #print(self.distributorsAdminToken)
+            
 
             
 

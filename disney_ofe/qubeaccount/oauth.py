@@ -3,11 +3,11 @@ import traceback
 from autologging import traced, logged
 import os
 import json
-import qubeaccount.db
-import qubeaccount.login
+#import qubeaccount.db as db
+import qubeaccount.login as login
 import utils.RiUtils
 import config
-import utils.restest
+import utils.restest as restest
 
 LOGGER = logging.getLogger(__name__)
 
@@ -267,6 +267,7 @@ class OAuth():
                                                     clientId = clientId, clientSecret = clientSecret)
 
         pollingTokenDict = {}
+        #print(accessTokenResponse)
         if accessTokenResponse:
             pollingTokenDict = accessTokenResponse
             pollingTokenDict['refresh_token'] = refreshToken
@@ -279,6 +280,7 @@ class OAuth():
         self.writeTokenToJson(tokenDict = pollingTokenDict, tokenJsonFile = tokenJsonFile)
 
         token = '{} {}'.format('Bearer', pollingTokenDict['access_token'])
+        #print(token)
         LOGGER.debug("Access Token returned: '{0}'".format(token))
         return token
 

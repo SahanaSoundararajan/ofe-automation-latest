@@ -29,7 +29,7 @@ class TestCase(unittest.TestCase):
 
             self.timezone = "Asia/Kolkata"
 
-            distributorAdminTokenObj = distributorAdminOAuth.OAuth(userAccount = "distributorsAdmin",
+            distributorAdminTokenObj = distributorAdminOAuth.OAuth(userAccount = "admin1",
                                                                    results = self.results, useMock = False,
                                                                    tokenJsonFile = TOKEN_JSON_ADMIN,
                                                                    oauthType = "Polling")
@@ -44,7 +44,7 @@ class TestCase(unittest.TestCase):
         self.assertEquals(result, 200)
     
     def test_new_order_download(self): #Download the new_orders.csv 
-        result = view.order_download('New')
+        result = view.order_download('New', self.distributorsAdminToken)
         self.assertTrue(result, True)
 
     def test_order_upload(self): #Modify QW Status in the new_order.csv and reupload to disney

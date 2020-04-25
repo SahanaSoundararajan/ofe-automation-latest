@@ -6,7 +6,7 @@ import traceback
 from autologging import traced, logged
 from datetime import datetime, timedelta
 import time
-import qubeaccount.db
+import qubeaccount.db as db
 import config
 from ui.browser import *
 import mail.imap_client
@@ -14,7 +14,6 @@ import mail.imap_client
 
 TWO_FACTOR_AUTH_SMS_CODE = 911440
 TWO_FACTOR_MAIL_SUBJECT = "One Time Password for your Qube Cinema Account"
-
 LOGGER = logging.getLogger(__name__)
 
 @traced

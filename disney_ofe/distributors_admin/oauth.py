@@ -19,7 +19,6 @@ class OAuth(oauth.OAuth):
 
         self.config = config.Config(service = "distributors_admin")
         self.oauthObj = oauth.OAuth(browser = browser, results = self.results)
-
         self.clientId = clientId if clientId else self.config.clientId
         self.clientSecret = clientSecret if clientSecret else self.config.clientSecret
         self.productId = productId if productId else self.config.productId
