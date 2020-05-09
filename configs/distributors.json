@@ -1,0 +1,182 @@
+{
+    "apiUrl": "http://qw-distributors-docker:3001",
+    "uiUrl": "http://distributor_ui_docker:port/",
+    "bugbinDcpBucket": "qubewire-test",
+    "bugbinAwsAccessKey": "",
+    "bugbinAwsSecretKey": "",
+    "dcpRootFolder": "QW_DCP_ROOT_FOLDER",
+    "distributorsClientId": "8ff03e5cc86547b4a64d4321a6ad4fbc",
+    "distributorsClientSecret": "a5e5da64999a46d9925fc5f737787fa1",
+    "xpressClientId": "0710dfeb63d04d77bd4895f5ba70ec06",
+    "xpressClientSecret": "c0fd123462ad4f9e9700a5580714b538",
+    "productId": "686e8a53-bf21-42e0-8b5d-252d95049f81",
+    "clientRedirectUrl": "https://api.automation.qubewire.com/v1/web/auth/callback",
+    "companyAAdmin": {
+      "qubeAccountEmail": "compaaad@gmail.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer 33314526-1bd8-4fd5-b32a-c0ad40c6d8a6_2cff527e-c8cd-4451-9a68-b8b95230e93d"
+    },
+    "companyAUser": {
+      "qubeAccountEmail": "compausr@gmail.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer 33314526-1bd8-4fd5-b32a-c0ad40c6d8a6_c7b43f6f-901d-4f04-b568-7adcba9d4489"
+    },
+    "companyAApprover": {
+      "qubeAccountEmail": "compaaapp@gmail.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer 33314526-1bd8-4fd5-b32a-c0ad40c6d8a6_b6c0e40f-a486-4cf4-b32d-367d7acb94d3"
+    },
+    "companyBApprover": {
+      "qubeAccountEmail": "compbaapp@gmail.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer e77c9fef-6bf2-427c-bd88-69a88d37fe03_5e6b6a16-b98f-4304-aa87-3a3cede96cb5"
+    },
+    "companyCApprover": {
+      "qubeAccountEmail": "compcaapp@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer 1ad715b1-42a4-4619-9e8b-d08442c7a36d_7393d121-6fe8-4758-b291-d11217f6b3a9"
+    },
+    "companyDApprover": {
+      "qubeAccountEmail": "compdaapp@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer 6642e6e0-4861-4cbf-b247-cbc665246703_53cd4abe-9cb1-4086-9fca-a98a675952ec"
+    },
+    "companyEApprover": {
+      "qubeAccountEmail": "compeaapp@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer cb0be652-98f7-4442-831a-8db931fe5da4_e14c74a9-977c-4d4c-bd9e-b8072b015dc2"
+    },
+    "companyFApprover": {
+      "qubeAccountEmail": "compfaapp@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer ad1f5578-e4ef-4d95-8620-ac1ab1386ae6_0fa7481e-15d6-4a20-a8cd-29c70bc569c8"
+    },
+    "companyGApprover": {
+      "qubeAccountEmail": "compgaapp@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "comment": "This company is exclusive for 5046 payment case where we set discounts",
+      "distributorsToken": "Bearer a5ac15ac-fd94-4691-bca9-97a82dd29bc1_a4f61872-f683-49cb-affe-1b9618878057"
+    },
+    "companyHApprover": {
+      "qubeAccountEmail": "comphaapp@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "comment": "This company is exclusive for 5047 payment case where we set discounts",
+      "distributorsToken": "Bearer a002efe4-861e-4b7f-b9b8-68d294f8245e_c7ea4b1d-d73b-4279-94ae-5123c86f0934"
+    },
+    "companyBAdmin": {
+      "qubeAccountEmail": "compbaad@gmail.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer e77c9fef-6bf2-427c-bd88-69a88d37fe03_9e717053-a8de-4758-a7bc-3fae4c2805af"
+    },
+    "companyBUser": {
+      "qubeAccountEmail": "compbusr@gmail.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer e77c9fef-6bf2-427c-bd88-69a88d37fe03_39430244-2554-41ea-a1a7-5db6f3d8757d"
+    },
+    "companyCAdmin": {
+      "qubeAccountEmail": "compcaad@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer 1ad715b1-42a4-4619-9e8b-d08442c7a36d_9568edd3-14e4-41f5-a2ed-1d13ddf66033"
+    },
+    "companyCUser": {
+      "qubeAccountEmail": "compcusr@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer 1ad715b1-42a4-4619-9e8b-d08442c7a36d_85ff8d65-aba5-4962-ac0e-e54fe04fd58d"
+    },
+    "companyDAdmin": {
+      "qubeAccountEmail": "compdaapp@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer 6642e6e0-4861-4cbf-b247-cbc665246703_9374ff92-5d65-47c8-83ca-7615c8378fb4"
+    },
+    "companyDUser": {
+      "qubeAccountEmail": "compdusr@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer 6642e6e0-4861-4cbf-b247-cbc665246703_119f6f4d-c9e7-4363-a5ef-b687115cb4d5"
+    },
+    "companyEAdmin": {
+      "qubeAccountEmail": "compeaad@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer cb0be652-98f7-4442-831a-8db931fe5da4_fa9b35fa-57c0-4436-8c1b-bdef2b8d6645"
+    },
+    "companyEUser": {
+      "qubeAccountEmail": "compeusr@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer cb0be652-98f7-4442-831a-8db931fe5da4_fad37057-569d-4af8-962b-37a49398e8da"
+    },
+    "companyFAdmin": {
+      "qubeAccountEmail": "companyfaad@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer ad1f5578-e4ef-4d95-8620-ac1ab1386ae6_e8ceb631-5908-4f98-b793-6a4fd9180869"
+    },
+    "companyFUser": {
+      "qubeAccountEmail": "compfusr@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "distributorsToken": "Bearer ad1f5578-e4ef-4d95-8620-ac1ab1386ae6_c7dbe52c-1a88-4f30-a81c-8c8ffc0a0698"
+    },
+    "companyGAdmin": {
+      "qubeAccountEmail": "compgaad@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "comment": "This company is exclusive for 5046 payment case where we set discounts",
+      "distributorsToken": "Bearer a5ac15ac-fd94-4691-bca9-97a82dd29bc1_a49c0fcf-7c96-40f1-8678-37b9a9c717d7"
+    },
+    "companyGUser": {
+      "qubeAccountEmail": "compgusr@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "comment": "This company is exclusive for 5046 payment case where we set discounts",
+      "distributorsToken": "Bearer a5ac15ac-fd94-4691-bca9-97a82dd29bc1_1306e27f-b2c7-41e7-bcdc-d1b3e591c94b"
+    },
+    "companyHAdmin": {
+      "qubeAccountEmail": "comphaad@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "comment": "This company is exclusive for 5047 payment case where we set discounts",
+      "distributorsToken": "Bearer a002efe4-861e-4b7f-b9b8-68d294f8245e_099dcfa8-6142-47b8-a81f-f25e7549e1d9"
+    },
+    "companyHUser": {
+      "qubeAccountEmail": "comphusr@yahoo.com",
+      "qubeAccountPassword": "Password!2",
+      "comment": "This company is exclusive for 5047 payment case where we set discounts",
+      "distributorsToken": "Bearer a002efe4-861e-4b7f-b9b8-68d294f8245e_e82011fe-4f85-4cf5-8c46-2508f99c9a6e"
+    },
+    "companyIAdmin": {
+      "qubeAccountEmail": "acompanyadm@gmail.com",
+      "qubeAccountPassword": "Password!2",
+      "comment": "This company is exclusive for 5048 payment case where we set discounts",
+      "distributorsToken": "Bearer ea233334-f032-478e-a95c-33253f11dac8_80905f02-7feb-47ef-89c5-6dcbfb294d03"
+    },
+    "companyJApprover": {
+      "qubeAccountEmail": "companyjapprover@gmail.com",
+      "qubeAccountPassword": "Password!2",
+      "comment": "This company is exclusive for 5434 & 5435 cpls on top cases",
+      "distributorsToken": "Bearer bebf5493-1e6d-44f1-bd67-13d08041e22d_f506f0ab-4d6f-4048-b031-4ae331c938e2"
+    },
+    "wireSafe1User": {
+      "qubeAccountEmail": "abcdreal.image+company1@gmail.com",
+      "qubeAccountPassword": "password"
+    },
+    "distributorsAdmin": {
+      "qubeAccountEmail": "abcdreal.image+admin@gmail.com",
+      "qubeAccountPassword": "abcd-12",
+      "distributorsToken": "Bearer 33314526-1bd8-4fd5-b32a-c0ad40c6d8a6_69eb6cd8-bd26-4bf8-9ec6-fca004a6bb62"
+    },
+    "ignoreFailureAndContinue": true,
+    "adminToken": "Bearer 9c8081b3-355f-4b74-951f-a4ed9fb46f33",
+    "electronicBucket": "",
+    "awsSecretKey": "",
+    "awsAccessKey": "",
+    "cplObjBucket": "docker-composition-s3-bucket",
+    "moviebuffCplBucket": "docker-cpl-movie-map-bucket",
+    "kdmBookingsBucket": "docker-kdm-booking-store",
+    "dcpBookingsBucket": "docker-dcp-booking-store",
+    "partnerDeliveryStatusBucket": "docker-dcp-delivery-status-bucket",
+    "inboxDeliveryStatusBucket": "docker-inbox-dcp-delivery-status-bucket",
+    "manifestJsonBucket": "docker-manifest-store",
+    "s3Host": null,
+    "dbName": "keysmithtest",
+    "dbHost": "",
+    "dbUserName": "dbroot",
+    "dbPassword": "",
+    "partnerBucket": "",
+    "inboxBucket": "",
+    "planBucket": "",
+    "inboxKdmDeliveryStatusBucket": "docker-kdm-delivery-status-store"
+  }

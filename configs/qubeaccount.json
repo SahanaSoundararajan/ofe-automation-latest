@@ -1,8 +1,8 @@
 {
-    "url": "https://account.staging.qube.in",
-    "dbHost": "",
-    "dbName": "",
-    "dbUsername": "",
-    "dbPassword": "",
-    "qubeAccountSenderEmail": "noreply@qubecinema.com"
-  }
+  "url": "https://account.staging.qube.in",
+  "dbHost": "qube-acc-stag.cbb7ltdjrzfw.us-east-1.rds.amazonaws.com",
+  "dbName": "qubeidtestdb",
+  "dbUsername": "root",
+  "dbPassword": "QwAX9tStJ0cZY",
+  "qubeAccountSenderEmail": "noreply@qubecinema.com"
+}

@@ -24,17 +24,21 @@ class Practice:
 
         if not self.setUpDone:
 
+            print("Before startmock")
             self.mock = start_mock.StartMock(service = "distributors_admin", results = self.results)
+            print("After startmock")
 
             self.timezone = "Asia/Kolkata"
 
             distributorAdminTokenObj = distributorAdminOAuth.OAuth(userAccount = "admin1",
                                                                    results = self.results, useMock = True,
                                                                    tokenJsonFile = TOKEN_JSON_ADMIN,
-                                                                   oauthType = "Polling")
+                                                                   oauthType = "polling")
 
             self.distributorsAdminToken = distributorAdminTokenObj.token
-            #print(self.distributorsAdminToken)
+            print(self.distributorsAdminToken)
+            self.setUpDone = True
+            
             
 
             

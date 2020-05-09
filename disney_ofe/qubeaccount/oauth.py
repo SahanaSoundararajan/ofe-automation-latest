@@ -259,15 +259,16 @@ class OAuth():
         self.login.login(qubeAccountUsername = qubeAccountUsername, qubeAccountPassword = qubeAccountPassword,
                          email = email, password = password, code = pollingResponse['code'], isTrustedClient = False)
 
+        
         pollingTokenList = self.api.polling(pollingUrl = pollingUrl, code = code, clientId = clientId,
                                             clientSecret = clientSecret)
+        print("pollingTokenList_log: {0}".format(pollingTokenList))
 
         refreshToken = pollingTokenList[0]['refresh_token']
         accessTokenResponse = self.api.refreshToken(refreshToken = refreshToken, productId = productId,
                                                     clientId = clientId, clientSecret = clientSecret)
 
         pollingTokenDict = {}
-        #print(accessTokenResponse)
         if accessTokenResponse:
             pollingTokenDict = accessTokenResponse
             pollingTokenDict['refresh_token'] = refreshToken
@@ -280,7 +281,6 @@ class OAuth():
         self.writeTokenToJson(tokenDict = pollingTokenDict, tokenJsonFile = tokenJsonFile)
 
         token = '{} {}'.format('Bearer', pollingTokenDict['access_token'])
-        #print(token)
         LOGGER.debug("Access Token returned: '{0}'".format(token))
         return token
 

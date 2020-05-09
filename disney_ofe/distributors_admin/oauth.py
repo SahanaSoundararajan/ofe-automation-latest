@@ -25,11 +25,14 @@ class OAuth(oauth.OAuth):
         self.clientRedirectUrl = clientRedirectUrl if clientRedirectUrl else self.config.clientRedirectUrl
 
         userAccount = getattr(self.config, str(userAccount), userAccount)
+        print(userAccount)
         self.qubeAccountEmail = userAccount["qubeAccountEmail"]
+        print(self.qubeAccountEmail)
         self.qubeAccountPassword = userAccount["qubeAccountPassword"]
+        print(self.qubeAccountPassword)
         self.email = userAccount.get("email")
+        self.email = userAccount.get("email[123]")
         self.password = userAccount.get("password")
-
         self.token = userAccount.get("token")
 
         if not useMock:
@@ -49,3 +52,6 @@ class OAuth(oauth.OAuth):
                                                            email = self.email, password = self.password)
             else:
                 raise Exception("Invalid oauthType: '{0}'".format(oauthType))
+
+
+        

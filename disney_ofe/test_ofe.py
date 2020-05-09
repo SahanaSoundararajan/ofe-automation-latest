@@ -30,7 +30,7 @@ class TestCase(unittest.TestCase):
             self.timezone = "Asia/Kolkata"
 
             distributorAdminTokenObj = distributorAdminOAuth.OAuth(userAccount = "admin1",
-                                                                   results = self.results, useMock = False,
+                                                                   results = self.results, useMock = True,
                                                                    tokenJsonFile = TOKEN_JSON_ADMIN,
                                                                    oauthType = "Polling")
 

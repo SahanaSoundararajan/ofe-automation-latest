@@ -14,6 +14,7 @@ def mockWrapper(func):
     @functools.wraps(func)
     def func_wrapper(inst, *args, **kwargs):
 
+        print("func_wrapper")
         inst.logger.debug("Url: '{}'\nMethod: '{}'\nHeaders: '{}'\ndata: {}\n".
                           format(request.path, request.method, request.headers, request.get_data()))
 
@@ -62,7 +63,7 @@ class MockServer(Thread):
             (str) host: give 0.0.0.0 to have server available externally. Default is 127.0.0.1
             (int) port: port of the Webserver. 5432
         """
-
+        print("MockServer called")
         super().__init__()
         self._initialise_logger(logDir = logDir, logFileName = logFileName)
         self.port = port

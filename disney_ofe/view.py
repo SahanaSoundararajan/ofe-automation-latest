@@ -55,8 +55,6 @@ def order_download(order_type, auth_t):
     with requests.Session() as s:
         if order_type == 'New':
             url = "https://disney-adapter.jupiter.staging.qubewire.com/v1/reports/new-orders"
-            # with open('auth.txt') as line:
-            #     auth_t = line.readline()
             headers = {
                 'authorization': "Bearer " + auth_t,
             }
@@ -80,8 +78,6 @@ def order_download(order_type, auth_t):
 
         elif order_type == 'Inflight':
             url = "https://disney-adapter.jupiter.staging.qubewire.com/v1/reports/inflight"
-            # with open('auth.txt') as line:
-            #     auth_t = line.readline()
             headers = {
                 'authorization': "Bearer " + auth_t,
             }
